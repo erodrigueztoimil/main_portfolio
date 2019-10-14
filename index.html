@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!-- sass -->
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:900&display=swap" rel="stylesheet">
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <h2 href="#home">ernesto r.</h2>
+        <div class="menu-items">
+          <ul>
+            <li class='active'><a class="link" href="#home">home.</a></li>
+            <li><a class="link" href="#about">about.</a></li>
+            <li><a class="link" href="#work">work.</a></li>
+            <li><a class="link" href="#contact">contact.</a></li>
+          </ul>
+        </div>
+        <div class="menu-bttn">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home">
+      <div class="caption">
+        <span id="text"></span>
+        <span class="cursor">|</span>
+      </div>
+      <div class="shortcuts">
+        <a href="https://github.com/erodrigueztoimil" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/ernesto-rodriguez-952772152/" target="_blank">LinkedIn</a>
+      </div>
+      <div class="arrow">
+        <a href="#work"><img src="./icons/arrow.svg" alt="arrow"></a>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="rellax image" data-rellax-speed="-2">
+        <img src="./images/profile.jpeg" alt="profile">
+      </div>
+      <div class="rellax header" data-rellax-speed="4">
+        <h1 >Ernesto Rodriguez</h1>
+      </div>
+      <div class="rellax paragraph" data-rellax-speed="-3">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </section>
+
+    <section id="work">
+      <!-- <div class="container">
+        <div class="cover">
+          <img src="./images/futura.png" alt="futura">
+        </div>
+        <div class="page">
+          <button class="close">CLOSE</button>
+          <img src="./images/futura.png" alt="futura">
+        </div>
+      </div> -->
+    </section>
+
+    <section id="contact">
+      <div class="parent">
+        <div class="img"></div>
+        <div class="form">
+          <form class="" action="index.html" method="post">
+            <input type="text" name="" value="" placeholder="name" required>
+            <input type="email" name="" value="" placeholder="email" required>
+            <textarea name="name" placeholder="message" required></textarea>
+            <input type="submit" name="" value="Submit">
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <h2>&copy; 2019</h2>
+    </footer>
+
+    <script type="text/javascript" src="./js/index.js"></script>
+    <script type="text/javascript" src="./js/rellax.js"></script>
+    <script>
+    	var rellax = new Rellax('.rellax');
+    </script>
+  </body>
+</html>
