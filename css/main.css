@@ -4,6 +4,11 @@ html {
 html body {
   margin: 0;
 }
+html body h1 {
+  font-weight: lighter;
+  font-size: 40px;
+  padding: 20px;
+}
 html.overflow {
   overflow: hidden;
 }
@@ -166,109 +171,116 @@ nav .container .menu-items ul li.active {
   }
 }
 #about {
-  padding-top: 150px;
-  position: relative;
+  padding-top: 120px;
+}
+#about .header {
+  text-align: center;
+  padding: 80px 7%;
+}
+#about .wrapper {
+  display: flex;
+}
+#about .wrapper .text p {
+  font-size: 20px;
+  margin: 0;
+}
+#about .wrapper .image {
+  background-image: url("../images/guy_coding.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 @media only screen and (max-width: 768px) {
-  #about {
-    height: 100vh;
+  #about .wrapper {
+    flex-direction: column;
   }
-  #about .image {
-    position: absolute;
-    top: 0;
-    left: 20%;
+  #about .wrapper .text, #about .wrapper .image {
+    width: 85%;
   }
-  #about .image img {
-    width: 80%;
-    max-width: 370px;
+  #about .wrapper .text {
+    text-align: center;
+    margin: auto;
   }
-  #about .header {
-    position: absolute;
-    top: 50%;
-    left: 5%;
-  }
-  #about .header h1 {
-    font-size: 50px;
-    font-family: "Source Sans Pro", sans-serif;
-    color: orange;
-  }
-  #about .paragraph {
-    position: absolute;
-    width: 80%;
-    top: 17%;
-    left: 10%;
-  }
-  #about .paragraph p {
-    font-size: 18px;
+  #about .wrapper .image {
+    margin: 60px auto 0;
+    height: 370px;
   }
 }
 @media only screen and (min-width: 769px) {
-  #about {
-    height: 100vh;
+  #about .wrapper {
+    padding: 0 5%;
   }
-  #about .header {
-    position: absolute;
-    top: 40%;
-    left: 20%;
+  #about .wrapper .text, #about .wrapper .image {
+    width: 50%;
   }
-  #about .header h1 {
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 100px;
-    color: orange;
+  #about .wrapper .text {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 5%;
   }
-  #about .image {
-    position: absolute;
-    top: 10%;
-    left: 10%;
+  #about .wrapper .text p {
+    width: 80%;
   }
-  #about .image img {
-    height: 350px;
-    width: 370px;
-  }
-  #about .paragraph {
-    position: absolute;
-    width: 40%;
-    top: 15%;
-    left: 50%;
-  }
-  #about .paragraph p {
-    font-size: 25px;
+  #about .wrapper .image img {
+    width: 90%;
   }
 }
 #work {
   padding-top: 120px;
-  height: 100vh;
+}
+#work .information {
+  text-align: center;
+  padding: 90px 7%;
+}
+#work .information a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+  border: 1px solid #000;
+  border-radius: 60px;
+  background: #000;
+  padding: 15px 50px;
+}
+#work .information a:hover {
+  background-color: #fff;
+  color: #000;
 }
 #work .container {
-  position: relative;
+  display: flex;
+  width: 80%;
+  max-width: 750px;
+  margin: 10% auto;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3);
 }
-#work .container .cover {
-  width: 420px;
-  height: 250px;
-}
-#work .container .cover img {
+#work .container img {
+  width: 100%;
   height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-#work .container .page {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 2;
-}
-#work .container.show .cover {
-  opacity: 0;
-}
-#work .container.show .page {
-  display: block;
+  object-fit: fill;
 }
 
 #contact {
   padding-top: 120px;
+}
+#contact .header {
+  text-align: center;
+  padding: 90px 7%;
+}
+#contact .header .wrapper {
+  display: flex;
+}
+#contact .header .wrapper .container {
+  padding-bottom: 8%;
+}
+#contact .header .wrapper .container h2 {
+  font-size: 25px;
+  margin: 10px;
+  font-weight: lighter;
+}
+#contact .header .wrapper .container a {
+  font-size: 20px;
+  margin: 0;
+  color: #000;
+  text-decoration: none;
 }
 #contact .parent {
   display: flex;
@@ -312,21 +324,27 @@ nav .container .menu-items ul li.active {
 }
 
 @media only screen and (max-width: 768px) {
+  #contact .header .wrapper {
+    flex-direction: column;
+  }
   #contact .parent {
     flex-direction: column;
   }
   #contact .parent .img {
     height: 350px;
-    width: 90%;
+    width: 80%;
     margin: 40px auto;
   }
   #contact .parent .form {
-    width: 90%;
+    width: 80%;
     max-width: 440px;
     margin: auto;
   }
 }
 @media only screen and (min-width: 769px) {
+  #contact .header .wrapper {
+    justify-content: space-around;
+  }
   #contact .parent {
     padding: 0 5%;
   }

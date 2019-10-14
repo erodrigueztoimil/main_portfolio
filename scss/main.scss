@@ -1,8 +1,17 @@
+// font
+$source: 'Source Sans Pro', sans-serif;
+
 html {
   scroll-behavior: smooth;
 
   body {
     margin: 0;
+
+    h1 {
+      font-weight: lighter;
+      font-size: 40px;
+      padding: 20px;
+    }
   }
 
   &.overflow {
@@ -154,6 +163,7 @@ nav {
     text-align: center;
 
     span {
+      // font-family: 'Source Sans Pro', sans-serif;
       font-size: 50px;
 
       &.cursor {
@@ -214,45 +224,48 @@ nav {
 }
 
 #about {
-  padding-top: 150px;
-  position: relative;
+  padding-top: 120px;
+
+  .header {
+    text-align: center;
+    padding: 80px 7%;
+  }
+
+  .wrapper {
+    display: flex;
+
+    .text {
+      p {
+        font-size: 20px;
+        margin: 0;
+      }
+    }
+
+    .image {
+      background-image: url('../images/guy_coding.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+  }
 }
 
 @media only screen and (max-width:768px) {
   #about {
-    height: 100vh;
+    .wrapper {
+      flex-direction: column;
 
-    .image {
-      position: absolute;
-      top: 0;
-      left: 20%;
-
-      img {
-        width: 80%;
-        max-width: 370px;
+      .text, .image {
+        width: 85%;
       }
-    }
 
-    .header {
-      position: absolute;
-      top: 50%;
-      left: 5%;
-
-      h1 {
-        font-size: 50px;
-        font-family: 'Source Sans Pro', sans-serif;
-        color: orange;
+      .text {
+        text-align: center;
+        margin: auto;
       }
-    }
 
-    .paragraph {
-      position: absolute;
-      width: 80%;
-      top: 17%;
-      left: 10%;
-
-      p {
-        font-size: 18px;
+      .image {
+        margin: 60px auto 0;
+        height: 370px;
       }
     }
   }
@@ -260,39 +273,27 @@ nav {
 
 @media only screen and (min-width:769px) {
   #about {
-    height: 100vh;
+    .wrapper {
+      padding: 0 5%;
 
-    .header {
-      position: absolute;
-      top: 40%;
-      left: 20%;
-
-      h1 {
-        font-family: 'Source Sans Pro', sans-serif;
-        font-size: 100px;
-        color: orange;
+      .text, .image {
+        width: 50%;
       }
-    }
 
-    .image {
-      position: absolute;
-      top: 10%;
-      left: 10%;
+      .text {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        padding-left: 5%;
 
-      img {
-        height: 350px;
-        width: 370px;
+        p {
+          width: 80%;
+        }
       }
-    }
 
-    .paragraph {
-      position: absolute;
-      width: 40%;
-      top: 15%;
-      left: 50%;
-
-      p {
-        font-size: 25px;
+      .image {
+        img {
+          width: 90%;
+        }
       }
     }
   }
@@ -300,45 +301,71 @@ nav {
 
 #work {
   padding-top: 120px;
-  height: 100vh;
+
+  .information {
+    text-align: center;
+    padding: 90px 7%;
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      // font-family: 'Source Sans Pro', sans-serif;
+      font-size: 25px;
+      border: 1px solid #000;
+      border-radius: 60px;
+      background: #000;
+      padding: 15px 50px;
+
+      &:hover {
+        background-color: #fff;
+        color: #000;
+      }
+    }
+  }
 
   .container {
-    position: relative;
+    display: flex;
+    width: 80%;
+    max-width: 750px;
+    margin: 10% auto;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30);
 
-    .cover {
-      width: 420px;
-      height: 250px;
-
-      img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-      }
-    }
-
-    .page {
-      display: none;
-      position: absolute;
-      top: 0;
-      left: 0;
+    img {
       width: 100%;
-      z-index: 2;
-    }
-
-    &.show {
-      .cover {
-        opacity: 0;
-      }
-
-      .page {
-        display: block;
-      }
+      height: 100%;
+      object-fit: fill;
     }
   }
 }
 
 #contact {
   padding-top: 120px;
+
+  .header {
+    text-align: center;
+    padding: 90px 7%;
+
+    .wrapper {
+      display: flex;
+
+      .container {
+        padding-bottom: 8%;
+
+        h2 {
+          font-size: 25px;
+          margin: 10px;
+          font-weight: lighter;
+        }
+
+        a {
+          font-size: 20px;
+          margin: 0;
+          color: #000;
+          text-decoration: none;
+        }
+      }
+    }
+  }
 
   .parent  {
     display: flex;
@@ -392,17 +419,23 @@ nav {
 
 @media only screen and (max-width:768px) {
   #contact {
+    .header {
+      .wrapper {
+        flex-direction: column;
+      }
+    }
+
     .parent {
       flex-direction: column;
 
       .img {
         height: 350px;
-        width: 90%;
+        width: 80%;
         margin: 40px auto;
       }
 
       .form {
-        width: 90%;
+        width: 80%;
         max-width: 440px;
         margin: auto;
       }
@@ -412,6 +445,12 @@ nav {
 
 @media only screen and (min-width:769px) {
   #contact {
+    .header {
+      .wrapper {
+        justify-content: space-around;
+      }
+    }
+
     .parent {
       padding: 0 5%;
 
@@ -444,3 +483,10 @@ footer {
     margin: 0;
   }
 }
+
+
+
+// <img src="./images/profile.jpeg" alt="profile">
+// <h1 >Ernesto Rodriguez</h1>
+// <p>I am an enthusiastic developer, always looking forward to building new and exciting software for people to enjoy and benefit from. I graduated from a coding bootcamp in Miami, Wyncode Academy, where I worked mostly on my Front-End skills. During my training I had the opportunity to work on my first two projects, one being my portfolio and the other being a web-application to help organizations post about their volunteer opportunities. I have tremendous passion for software development, since graduating I have been going out of my way to improve and learn new skills. I volunteer in start-up where they were building an app to help kids that are suffering from bullying and depression. These opportunities have helped me develop my skills in web and app development, I am very excited for future projects where I would be able to apply what I have learned and mastered.
+// </p>

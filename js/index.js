@@ -51,20 +51,20 @@ function typeWriter() {
   }
 }
 
-jQuery(
-  function() {
-    var cont = $('.container');
-    var closeBttm = $('.close');
-    // var page = $('.page');
-
-    cont.click(function() {
-      cont.addClass('show');
-      // $('html').addClass('overflow');
-    });
-
-    closeBttm.click(function() {
-      cont.removeClass('show');
-      $('html').removeClass('overflow');
-    });
-  }
-)
+// jQuery(
+//   function() {
+//     var c = $('.container');
+//     var closeBttm = $('.page button');
+//     // var page = $('.page');
+//
+//     cont.click(function() {
+//       cont.addClass('show');
+//       $('html').addClass('overflow');
+//     });
+//
+//     closeBttm.click(function() {
+//       cont.removeClass('show');
+//       $('html').removeClass('overflow');
+//     });
+//   }
+// )
