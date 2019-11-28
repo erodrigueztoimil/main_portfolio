@@ -1,6 +1,4 @@
-html {
-  scroll-behavior: smooth;
-}
+@import url("https://fonts.googleapis.com/css?family=Abel|Alatsi&display=swap");
 html body {
   margin: 0;
 }
@@ -30,6 +28,7 @@ nav .container {
 nav .container h2 {
   font-size: 25px;
   font-weight: lighter;
+  font-family: "Abel", sans-serif;
 }
 nav .container .menu-items ul {
   margin: 0;
@@ -42,6 +41,7 @@ nav .container .menu-items ul li a {
   text-decoration: none;
   color: #000;
   font-size: 22px;
+  font-family: "Abel", sans-serif;
 }
 nav .container .menu-items ul li.active {
   background: orange;
@@ -122,6 +122,7 @@ nav .container .menu-items ul li.active {
   text-align: center;
 }
 #home .caption span {
+  font-family: "Abel", sans-serif;
   font-size: 50px;
 }
 #home .caption span.cursor {
@@ -138,6 +139,7 @@ nav .container .menu-items ul li.active {
   text-align: center;
 }
 #home .shortcuts a {
+  font-family: "Abel", sans-serif;
   color: #000;
   text-decoration: none;
   font-size: 25px;
@@ -154,7 +156,7 @@ nav .container .menu-items ul li.active {
   animation: jump 2s ease infinite;
 }
 #home .arrow img {
-  height: 80px;
+  height: 60px;
 }
 
 @keyframes blink {
@@ -177,11 +179,15 @@ nav .container .menu-items ul li.active {
   text-align: center;
   padding: 80px 7%;
 }
+#about .header h1 {
+  font-family: "Alatsi", sans-serif;
+}
 #about .wrapper {
   display: flex;
 }
 #about .wrapper .text p {
-  font-size: 20px;
+  font-family: "Abel", sans-serif;
+  font-size: 22px;
   margin: 0;
 }
 #about .wrapper .image {
@@ -232,6 +238,9 @@ nav .container .menu-items ul li.active {
   text-align: center;
   padding: 90px 7%;
 }
+#work .information h1 {
+  font-family: "Alatsi", sans-serif;
+}
 #work .information a {
   text-decoration: none;
   color: #fff;
@@ -265,6 +274,9 @@ nav .container .menu-items ul li.active {
   text-align: center;
   padding: 90px 7%;
 }
+#contact .header h1 {
+  font-family: "Alatsi", sans-serif;
+}
 #contact .header .wrapper {
   display: flex;
 }
@@ -294,6 +306,10 @@ nav .container .menu-items ul li.active {
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+#contact .parent .form form input {
+  -webkit-appearance: none;
+  border-radius: 0;
 }
 #contact .parent .form form input[type=text], #contact .parent .form form input[type=email], #contact .parent .form form textarea {
   border: none;

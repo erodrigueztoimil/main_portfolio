@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Abel|Alatsi&display=swap');
+
 // font
-$source: 'Source Sans Pro', sans-serif;
+$header-text: 'Alatsi', sans-serif;
+$regular-text: 'Abel', sans-serif;
 
 html {
-  scroll-behavior: smooth;
-
   body {
     margin: 0;
 
@@ -36,6 +37,7 @@ nav {
     h2 {
       font-size: 25px;
       font-weight: lighter;
+      font-family: $regular-text;
     }
 
     .menu-items {
@@ -50,6 +52,7 @@ nav {
             text-decoration: none;
             color: #000;
             font-size: 22px;
+            font-family: $regular-text;
           }
 
           &.active {
@@ -163,7 +166,7 @@ nav {
     text-align: center;
 
     span {
-      // font-family: 'Source Sans Pro', sans-serif;
+      font-family: $regular-text;
       font-size: 50px;
 
       &.cursor {
@@ -183,6 +186,7 @@ nav {
     text-align: center;
 
     a {
+      font-family: $regular-text;
       color: #000;
       text-decoration: none;
       font-size: 25px;
@@ -202,7 +206,7 @@ nav {
     animation: jump 2s ease infinite;
 
     img {
-      height: 80px;
+      height: 60px;
     }
   }
 }
@@ -229,6 +233,10 @@ nav {
   .header {
     text-align: center;
     padding: 80px 7%;
+
+    h1 {
+      font-family: $header-text;
+    }
   }
 
   .wrapper {
@@ -236,7 +244,8 @@ nav {
 
     .text {
       p {
-        font-size: 20px;
+        font-family: $regular-text;
+        font-size: 22px;
         margin: 0;
       }
     }
@@ -306,6 +315,10 @@ nav {
     text-align: center;
     padding: 90px 7%;
 
+    h1 {
+      font-family: $header-text;
+    }
+
     a {
       text-decoration: none;
       color: #fff;
@@ -345,6 +358,10 @@ nav {
     text-align: center;
     padding: 90px 7%;
 
+    h1 {
+      font-family: $header-text;
+    }
+
     .wrapper {
       display: flex;
 
@@ -381,6 +398,11 @@ nav {
         display: flex;
         flex-direction: column;
         text-align: center;
+
+        input {
+          -webkit-appearance: none;
+          border-radius: 0;
+        }
 
         input[type=text], input[type=email], textarea {
           border: none;

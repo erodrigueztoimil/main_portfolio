@@ -37,19 +37,24 @@ $(window).scroll(
 )
 
 // typewriter animation
-var i = 0;
-var text = "Hello World!";
-var speed = 200;
+$(document).ready(
+  function() {
+    var i = 0;
+    var text = "Hello World!";
+    var speed = 200;
 
-setTimeout(typeWriter, speed);
-
-function typeWriter() {
-  if (i < text.length ) {
-    document.getElementById('text').innerHTML += text.charAt(i);
-    i++;
     setTimeout(typeWriter, speed);
+
+    function typeWriter() {
+      if (i < text.length ) {
+        document.getElementById('text').innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
   }
-}
+)
+
 
 // jQuery(
 //   function() {
