@@ -55,21 +55,19 @@ $(document).ready(
   }
 )
 
-
-// jQuery(
-//   function() {
-//     var c = $('.container');
-//     var closeBttm = $('.page button');
-//     // var page = $('.page');
-//
-//     cont.click(function() {
-//       cont.addClass('show');
-//       $('html').addClass('overflow');
-//     });
-//
-//     closeBttm.click(function() {
-//       cont.removeClass('show');
-//       $('html').removeClass('overflow');
-//     });
-//   }
-// )
+// on single-page sites, when navigation button is clicked ...
+$(document).ready(
+  
+  // add smooth scroll animation to html
+  $('a[href*="#"]').on('click', function(e) {
+    e.preventDefault()
+  
+    $('html, body').animate(
+      {
+        scrollTop: $($(this).attr('href')).offset().top,
+      },
+      500,
+      'linear'
+    )
+  })
+)
