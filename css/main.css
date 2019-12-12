@@ -261,6 +261,9 @@ nav .container .menu-items ul li.active {
   margin: 10% auto;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3);
 }
+#work .container a {
+  width: 100%;
+}
 #work .container img {
   width: 100%;
   height: 100%;

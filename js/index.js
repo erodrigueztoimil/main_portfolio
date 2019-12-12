@@ -58,7 +58,7 @@ $(document).ready(
 
 // this code was copied from an example online, for more information go to this site: https://www.taniarascia.com/smooth-scroll-to-id-with-jquery/
 
-// on single-page sites, when anchor is clicked ...
+// when navigation link is clicked
 $(document).ready(
   // add smooth scroll animation to html
   $('a[href*="#"]').on('click', function(e) {
