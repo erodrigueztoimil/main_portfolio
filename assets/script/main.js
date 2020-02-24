@@ -1,4 +1,5 @@
 $("document").ready(function() {
+  // handle navigation tuggle
   $(".nav-bttn").click(function() {
     toggleClasses();
   });
@@ -13,18 +14,16 @@ $("document").ready(function() {
     $("html").toggleClass("no-scroll");
   }
 
-  $(document).ready(
-    // add smooth scroll animation to html
-    $('a[href*="#"]').on("click", function(e) {
-      e.preventDefault();
+  // add smooth scroll animation when any anchor is clicked
+  $('a[href*="#"]').on("click", function(e) {
+    e.preventDefault();
 
-      $("html, body").animate(
-        {
-          scrollTop: $($(this).attr("href")).offset().top
-        },
-        700,
-        "linear"
-      );
-    })
-  );
+    $("html, body").animate(
+      {
+        scrollTop: $($(this).attr("href")).offset().top
+      },
+      400,
+      "linear"
+    );
+  });
 });

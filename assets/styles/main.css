@@ -436,8 +436,16 @@ textarea {
   padding: 0.2em 0;
 }
 
-body {
+* {
+  cursor: url("../images/iconfinder_check-circle-outline-blank_326565.svg"), auto;
+}
+
+html {
   font-family: "Open Sans", sans-serif;
+}
+
+html.no-scroll {
+  overflow: hidden;
 }
 
 .navigation {
@@ -471,7 +479,6 @@ body {
 
 .navigation .nav-contianer .nav-bttn {
   display: inline-block;
-  cursor: pointer;
 }
 
 .navigation .nav-contianer .nav-bttn .bar1,
@@ -561,16 +568,12 @@ body {
   }
 }
 
-.content-image {
-  margin: auto;
-}
-
-.content-text h1 {
+h1 {
   font-size: 30px;
   font-weight: bold;
 }
 
-.content-text p {
+p {
   margin: 15px 0 20px;
   font-size: 16px;
   line-height: 20px;
@@ -593,6 +596,10 @@ body {
   top: 52%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+#hero .hero-content .content-image {
+  margin: auto;
 }
 
 #hero .hero-content .content-text .content-social {
@@ -635,6 +642,30 @@ body {
   font-size: 12px;
 }
 
+#work {
+  padding: 120px 10%;
+}
+
+#work .header {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+#work .header h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#work .header p {
+  width: 90%;
+  max-width: 450px;
+  margin: auto;
+}
+
 #contact {
   background-color: #f8f8f8;
   width: 100%;
@@ -651,6 +682,7 @@ body {
 
 #contact .contact-content .content-image {
   max-width: 400px;
+  margin: auto;
 }
 
 #contact .contact-content .content-text {
@@ -658,7 +690,8 @@ body {
 }
 
 #contact .contact-content .content-text p {
-  width: 80%;
+  width: 100%;
+  max-width: 570px;
   margin: 15px auto 40px;
 }
 
@@ -676,20 +709,16 @@ body {
           box-shadow: 10px 10px 20px #cecece;
 }
 
-footer {
-  background-color: #f8f8f8;
-}
-
 footer h5 {
   text-align: center;
-  padding-bottom: 70px;
+  padding: 45px 0;
 }
 
 @media screen and (max-width: 991px) {
-  .content-text h1 {
+  h1 {
     font-size: 25px;
   }
-  .content-text p {
+  p {
     font-size: 14px;
   }
   #hero .hero-content {
@@ -723,6 +752,17 @@ footer h5 {
   }
   #hero .content-text .content-social img {
     margin-right: 15px;
+  }
+  #contact {
+    height: 100vh;
+  }
+  #contact .contact-content {
+    width: 100%;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
 }
 /*# sourceMappingURL=main.css.map */
