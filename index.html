@@ -1,123 +1,129 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-    <!-- sass -->
-    <link rel="stylesheet" href="./assets/css/main.css">
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
 
-    <!-- jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Optional CSS -->
+    <link rel="stylesheet" href="assets/styles/main.css" />
+
+    <title>Ernesto Rodriguez - Portfolio</title>
   </head>
   <body>
-    <nav>
-      <div class="container">
-        <h2 href="#home">ernesto r.</h2>
-        <div class="menu-items">
-          <ul>
-            <li class='active'><a class="link" href="#home">home.</a></li>
-            <li><a class="link" href="#about">about.</a></li>
-            <li><a class="link" href="#work">work.</a></li>
-            <li><a class="link" href="#contact">contact.</a></li>
-          </ul>
-        </div>
-        <div class="menu-bttn">
+    <div class="navigation">
+      <div class="nav-contianer">
+        <h1><a href="#">Ernesto Rodriguez</a></h1>
+
+        <div class="nav-bttn">
           <div class="bar1"></div>
           <div class="bar2"></div>
         </div>
-      </div>
-    </nav>
 
-    <section id="home">
-      <div class="caption">
-        <span id="text"></span>
-        <span class="cursor">|</span>
+        <div class="nav-items">
+          <ul>
+            <li class="nav-link"><a href="#hero">About</a></li>
+            <li class="nav-link"><a href="#work">Work</a></li>
+            <li class="nav-link">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="shortcuts">
-        <a href="https://github.com/erodrigueztoimil" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/ernesto-rodriguez-952772152/" target="_blank">LinkedIn</a>
-      </div>
-      <div class="arrow">
-        <a href="#work"><img src="./assets/icons/arrow.svg" alt="arrow"></a>
-      </div>
-    </section>
+    </div>
 
-    <section id="about">
-      <div class="header">
-        <h1>Get to know me!</h1>
-      </div>
-      <div class="wrapper">
-        <div class="text">
-          <p>I am an enthusiastic developer, always looking forward to building new and exciting software for people to enjoy and benefit from. I graduated from a coding bootcamp in Miami, Wyncode Academy, where I worked mostly on my Front-End skills. During my training I had the opportunity to work on my first two projects, one being my portfolio and the other being a web-application to help organizations post about their volunteer opportunities. I have tremendous passion for software development, since graduating I have been going out of my way to improve and learn new skills. I volunteered in a start-up where they were building an app to help kids that are suffering from bullying and depression. These opportunities have helped me develop my skills in web and app development, I am very excited for future projects where I would be able to apply what I have learned and mastered.
+    <div id="hero">
+      <div class="hero-content row">
+        <div class="content-image col-lg-6 col-sm-12">
+          <img
+            src="assets/images/drawkit-content-man-colour.svg"
+            alt="drawkit-content-man-colour"
+          />
+        </div>
+
+        <div class="content-text col-lg-6 col-sm-12">
+          <h1>Full Stack Developer</h1>
+
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima
+            aperiam nemo earum consequuntur quidem labore hic illum sint illo
+            dolor ex autem quos molestias doloremque saepe accusantium, neque
+            maiores nostrum.
           </p>
-        </div>
-        <div class="image"></div>
-      </div>
-    </section>
 
-    <section id="work">
-      <div class="information">
-        <h1>Latest Projects.</h1>
-        <a href="https://github.com/erodrigueztoimil" target="_blank">GitHub</a>
-      </div>
-
-      <div class="container">
-        <a href="https://gtaccountax.com/" target="_blank">
-          <img src="https://ucarecdn.com/49ca6774-eb64-473d-9a95-b68f50ab8489/gtaccountax.png">
-        </a>
-      </div>
-
-      <div class="container">
-        <a href="https://workforcebrokers.netlify.com/" target="_blank">
-          <img src="https://ucarecdn.com/7bbf5ab0-1184-4caa-a9b0-22878aee2b18/ScreenShot20200109at95603AM.png" alt="workforce">
-        </a>
-      </div>
-
-      <div class="container">
-        <a href="https://futuralogistics.netlify.com/" target="_blank">
-          <img src="https://ucarecdn.com/75c492ec-f37c-4d82-9687-403c22badb10/futura.jpg" alt="futura">
-        </a>
-      </div>
-
-      <div class="container">
-        <img src="https://ucarecdn.com/dd2cc969-320b-4918-8bfb-7e63c273e6a3/portfolio.jpg">
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="header">
-        <h1>Reach Out!</h1>
-        <div class="wrapper">
-          <div class="container">
-            <h2>Phone</h2>
-            <a href="Tel:7863438972">786-343-8972</a>
-          </div>
-          <div class="container">
-            <h2>Email</h2>
-            <a href="mailto:erodrigueztoimil@gmail.com">erodrigueztoimil@gmail.com</a>
+          <div class="content-social">
+            <!-- <p>Follow me:</p> -->
+            <a
+              href="https://www.linkedin.com/in/ernesto-rodriguez-952772152/"
+              target="_blank"
+              ><img src="assets/images/linkedin.png" alt="linkedin"
+            /></a>
+            <a href="https://github.com/erodrigueztoimil" target="_blank"
+              ><img src="assets/images/github.png" alt="github"
+            /></a>
           </div>
         </div>
       </div>
-      <div class="parent">
-        <div class="img"></div>
-        <div class="form">
-          <form class="" action="index.html" method="post">
-            <input type="text" name="" value="" placeholder="name" required>
-            <input type="email" name="" value="" placeholder="email" required>
-            <textarea name="name" placeholder="message" required></textarea>
-            <input type="submit" name="" value="Submit">
-          </form>
+
+      <div class="scroll-icon">
+        <img src="assets/images/mouse-icon.svg" alt="mouse" />
+        <p>Scroll Down.</p>
+      </div>
+    </div>
+
+    <div id="work" style="height: 100vh;"></div>
+
+    <div id="contact">
+      <div class="contact-content row">
+        <div class="content-image col-lg-4 col-sm-12">
+          <img
+            src="assets/images/drawkit-support-man-colour.svg"
+            alt="drawkit-support-man-colour"
+          />
+        </div>
+
+        <div class="content-text col-lg-8 col-sm-12">
+          <h1>Want to work with me?</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nam
+            laborum porro vel eum nesciunt? Eligendi, possimus officia ut quam
+            doloremque harum voluptates.
+          </p>
+
+          <a href="mailto:erodrigueztoimil@gmail.com">CONTACT</a>
         </div>
       </div>
-    </section>
+    </div>
 
     <footer>
-      <h2>&copy; 2019</h2>
+      <h5>Portfolio &copy; 2020. All rights reserved.</h5>
     </footer>
 
-    <!-- js file -->
-    <script type="text/javascript" src="./assets/js/index.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Optional JavaScript -->
+    <script src="assets/script/main.js"></script>
   </body>
 </html>
