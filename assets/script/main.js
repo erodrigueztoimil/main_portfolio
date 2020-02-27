@@ -1,5 +1,5 @@
 $("document").ready(function() {
-  // handle navigation tuggle
+  // tuggle navigation
   $(".nav-bttn").click(function() {
     toggleClasses();
   });
@@ -22,7 +22,7 @@ $("document").ready(function() {
       {
         scrollTop: $($(this).attr("href")).offset().top
       },
-      400,
+      500,
       "linear"
     );
   });
