@@ -1,10 +1,10 @@
-$("document").ready(function() {
+$("document").ready(function () {
   // tuggle navigation
-  $(".nav-bttn").click(function() {
+  $(".nav-bttn").click(function () {
     toggleClasses();
   });
 
-  $(".nav-link").click(function() {
+  $(".nav-link").click(function () {
     toggleClasses();
   });
 
@@ -15,15 +15,19 @@ $("document").ready(function() {
   }
 
   // add smooth scroll animation when any anchor is clicked
-  $('a[href*="#"]').on("click", function(e) {
+  $('a[href*="#"]').on("click", function (e) {
     e.preventDefault();
 
     $("html, body").animate(
       {
-        scrollTop: $($(this).attr("href")).offset().top
+        scrollTop: $($(this).attr("href")).offset().top,
       },
       500,
       "linear"
     );
   });
+
+  // automated copyright year
+  let year = new Date().getFullYear();
+  $("#year").text(year);
 });
